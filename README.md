@@ -156,3 +156,5 @@ Here’s a brief explanation of each data point for this hero:
 - **Attack Speed**: Shows the percentage increase in attack speed the item provides to the hero.
 - **Physical Attack**: Indicates the amount of physical attack power the item grants to the hero.
 - **Passive**: Describes the passive ability of the item (Lifebane/Punish), which activates automatically when certain conditions are met.
+
+# Collected from [Liquipedia](https://liquipedia.net/mobilelegends/Main_Page)
