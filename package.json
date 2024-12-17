@@ -1,0 +1,20 @@
+{
+  "name": "mlbb-api",
+  "version": "1.0.0",
+  "description": "Simple MLBB APi Using AXIOS, CHEERIO.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "pren",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.2",
+    "cheerio": "^1.0.0-rc.12"
+  }
+}
