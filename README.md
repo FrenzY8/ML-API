@@ -28,7 +28,7 @@ APi simple untuk informasi Mobile Legends, di ambil dari Liquipedia 😃.
 - **Hero**
 - https://ml-api-en.vercel.app/api/mlbb?hero=
 - **Items**
-- https://ml-api-en.vercel.app/api/mlbb-item?name=
+- https://ml-api-en.vercel.app/api/mlbb-items?name=
 
 # Setup Your APi
 - **Install**
