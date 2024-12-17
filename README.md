@@ -42,7 +42,7 @@ APi simple untuk informasi Mobile Legends, di ambil dari Liquipedia 😃.
 # **Hero Information**
 - ```/api/mlbb?hero=HERO_NAME```
 - Query: ```hero```
-- **Test it now**: [Run It](https://ml-api-en.vercel.app/api/mlbb?hero=Hanzo)
+- **Test it now**: [Here](https://ml-api-en.vercel.app/api/mlbb?hero=Hanzo)
 
 > Response:
 ```json
@@ -129,7 +129,7 @@ Here’s a brief explanation of each data point for this hero:
 # IN-Game Items
 - ```/api/mlbb-items?name=Malefic Gun```
 - Query: ```name```
-- Run It: [Here](https://ml-api-en.vercel.app/api/mlbb-items?name=Malefic Gun)
+- **Test it now**: [Here](https://ml-api-en.vercel.app/api/mlbb-items?name=Malefic_Gun)
 - Response:
 ```json
 {
