@@ -127,7 +127,7 @@ router.get("/mlbb-pro", async (req, res) => {
       "Alternate IDs": alternateIDs || 'N/A',
       "Approx. Total Winnings": totalWinnings || 'N/A'
     };
-    res.json(JSON.stringify(playerData, null, 2));
+       res.json(playerData);
     } catch (error) {
        res.status(500).json({ error: "Failed to fetch MLBB PRO, or PRO PLAYER not found for: " + name });
     }
