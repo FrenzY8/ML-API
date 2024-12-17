@@ -6,7 +6,7 @@ const router = express.Router();
 const cheerio = require('cheerio');
 
 // MLBB ITEMS
-router.get("/mlbb-item", async (req, res) => {
+router.get("/mlbb-items", async (req, res) => {
   const name = req.query.name || "Malefic Gun";
   const url = 'https://liquipedia.net/mobilelegends/' + name;
 
