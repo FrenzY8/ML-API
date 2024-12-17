@@ -17,7 +17,7 @@ APi simple buat informasi tentang Mobile Legends.
   - ```npm start```
   - ```node src/index.js```
 - **Or deploy it on Vercel!**
-> [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/FrenzY8/MobileLegends-APi)
+> [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/FrenzY8/ML-API)
 
 # **Hero Information**
 - ```/api/mlbb?hero=HERO_NAME```
