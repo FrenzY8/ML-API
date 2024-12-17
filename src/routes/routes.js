@@ -48,7 +48,7 @@ router.get("/mlbb-items", async (req, res) => {
 
     res.json(itemData);
   } catch (error) {
-    res.status(500).json({ error: "Failed to fetch MLBB item data" });
+    res.status(500).json({ error: "Failed to fetch MLBB ITEMS, or items not found for: " + name });
   }
 });
 
