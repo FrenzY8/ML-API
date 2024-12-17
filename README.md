@@ -47,7 +47,7 @@ APi simple untuk informasi Mobile Legends, di ambil dari Liquipedia 😃.
 > Response:
 ```json
 {
-heroInfo": {
+  "heroInfo": {
     "price": "32000   599",
     "lane": "Jungler",
     "heroType": "Assassin",
