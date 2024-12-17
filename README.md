@@ -109,7 +109,7 @@ Here’s a brief explanation of each data point for this hero:
 # IN-Game Items
 - ```/api/mlbb-items?name=Malefic Gun```
 - Query: ```name```
-- Run It: [Here](https://ml-api-en.vercel.app/api/mlbb-item?name=Malefic Gun)
+- Run It: [Here](https://ml-api-en.vercel.app/api/mlbb-items?name=Malefic Gun)
 - Response:
 ```json
 {
