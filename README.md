@@ -1,5 +1,25 @@
 # Simple MLBB APi
-APi simple buat informasi tentang Mobile Legends.
+APi simple untuk informasi Mobile Legends, di ambil dari Liquipedia.
+
+# Information Collected
+- Hero
+  - Stats
+  - Price
+  - Winrate in Proscene
+  - Lore
+  - etc.
+- Items
+  - Price
+  - Passive
+  - Tips
+  - etc.
+- Pro Player **(Soon)**
+  - Name
+  - Real Name
+  - Team
+  - Sallary
+  - Expert Hero
+  - etc.
 
 # Route
 > **Main Route**:
