@@ -13,7 +13,7 @@ APi simple untuk informasi Mobile Legends, di ambil dari Liquipedia 😃.
   - Passive
   - Tips
   - etc.
-- Pro Player **(Soon)** 👨‍🏫
+- Pro Player 👨‍🏫
   - Name
   - Real Name
   - Team
@@ -38,6 +38,139 @@ APi simple untuk informasi Mobile Legends, di ambil dari Liquipedia 😃.
   - ```node src/index.js```
 - **Or deploy it on Vercel!**
 > [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/FrenzY8/ML-API)
+
+# **Pro Player**
+- ```/api/mlbb-pro?name=PRO_NAME```
+- Query: ```name```
+- **Test it now**: [Here](https://ml-api-en.vercel.app/api/mlbb-pro?name=Kairi)
+```json
+{
+  "Name": "Gilang",
+  "Nationality": "Indonesia",
+  "Born": "July 22, 2002 (age 22)",
+  "Status": "Active",
+  "Role": "Mid Laner",
+  "Team": "Fnatic ONIC",
+  "Expert Hero": [
+    "Pharsa",
+    "Valentina",
+    "Lylia",
+    "Kadita",
+    "Novaria"
+  ],
+  "Social Media": {
+    "Instagram": "https://www.instagram.com/p/DClEXinzGGQ/?img_index=4&igsh=MTNsa3F2M3hrZW9paw==",
+    "TikTok": "https://tiktok.com/@gilang_sanz",
+    "YouTube": "https://www.youtube.com/channel/UCVHRjymdEIozj5LwncO2sSw"
+  },
+  "Trophies": [
+    "MPL ID S8 Champion",
+    "MPL ID S8 Champion",
+    "MPL ID S10 Champion",
+    "MPL ID S10 Champion",
+    "MPL ID S11 Champion",
+    "MPL ID S11 Champion",
+    "MSC 2023",
+    "MSC 2023",
+    "MPL ID S12 Champion",
+    "MPL ID S12 Champion",
+    "MPL ID S13 Champion",
+    "MPL ID S13 Champion",
+    "MPL Indonesia Season 13",
+    "Games of the Future 2024",
+    "M5 World Championship",
+    "MPL Indonesia Season 12",
+    "Snapdragon Pro Series Season 3 SEA - Challenge Finals",
+    "MLBB Southeast Asia Cup 2023",
+    "MPL Indonesia Season 11",
+    "MPL Indonesia Season 10",
+    "ONE Esports MPL Invitational 2021",
+    "MPL Indonesia Season 8",
+    "MPL Indonesia Season 14",
+    "MPL Indonesia Season 14",
+    "MPL Indonesia Season 14",
+    "MPL Indonesia Season 13",
+    "MPL Indonesia Season 13",
+    "H3RO Esports 5.0",
+    "MPL Indonesia Season 13",
+    "MPL Indonesia Season 13",
+    "MPL Indonesia Season 13",
+    "MPL Indonesia Season 13",
+    "M5 World Championship",
+    "MPL Indonesia Season 12",
+    "MPL Indonesia Season 12",
+    "MPL Indonesia Season 12",
+    "MPL Indonesia Season 12",
+    "MLBB Southeast Asia Cup 2023",
+    "MPL Indonesia Season 11",
+    "MPL Indonesia Season 11",
+    "MPL Indonesia Season 11",
+    "MPL Indonesia Season 11",
+    "MPL Indonesia Season 11",
+    "MPL Indonesia Season 11",
+    "MPL Indonesia Season 11",
+    "MPL Indonesia Season 11",
+    "MPL Indonesia Season 11",
+    "ONE Esports MPL Invitational 2021",
+    "MPL Indonesia Season 8",
+    "MPL Indonesia Season 7",
+    "MPL Indonesia Season 7",
+    "MPL Indonesia Season 6",
+    "MPL Indonesia Season 6",
+    "MPL Indonesia Season 6",
+    "MDL Indonesia Season 1"
+  ],
+  "Trivia": [
+    "The only player to win both MPL Indonesia and MDL Indonesia as the main roster.",
+    "Became the first player to have won MPL Indonesia four-peat (S10-S13). He achieved this together with his teammates Kairi, CW, and Kiboy on ONIC."
+  ],
+  "Statistics": [
+    "Has 100% win rate with Fanny at MPL Indonesia Season 9. ( 6 win, 0 loss )",
+    "Had the most appearance on Team of the week in MPL Indonesia Season 11 (4)",
+    "Had the highest average damage per minute in M5 World Championship (3972) "
+  ],
+  "Pro Photo": "https://liquipedia.net/commons/images/d/d3/FNOC_Sanz_S14.png",
+  "Alternate IDs": "SanzJago, Sanztuy, Sanz",
+  "Approx. Total Winnings": "$221,615"
+}
+```
+- **Name**: The player's full name, in this case, "Gilang."
+- **Nationality**: The country the player is from, Indonesia.
+- **Born**: The player's birthdate, July 22, 2002, and their current age (22 years old).
+- **Status**: The player's current activity status in esports, which is "Active."
+- **Role**: The player's main in-game role, here it is "Mid Laner."
+- **Team**: The player's current esports team, "Fnatic ONIC."
+- **Expert Hero**: The heroes that the player is known to excel with, including:
+  - Pharsa
+  - Valentina
+  - Lylia
+  - Kadita
+  - Novaria
+- **Social Media**: Links to the player's social media accounts:
+  - Instagram: [Link](https://www.instagram.com/p/DClEXinzGGQ/?img_index=4&igsh=MTNsa3F2M3hrZW9paw==)
+  - TikTok: [Link](https://tiktok.com/@gilang_sanz)
+  - YouTube: [Link](https://www.youtube.com/channel/UCVHRjymdEIozj5LwncO2sSw)
+  
+- **Trophies**: A list of major tournaments and achievements the player has won, including:
+  - MPL Indonesia Champion (multiple seasons)
+  - MSC (Mobile Legends Southeast Asia Cup) Champion (2023)
+  - M5 World Championship
+  - Snapdragon Pro Series (SEA - Challenge Finals)
+  - MLBB Southeast Asia Cup 2023
+  - And many more MPL Indonesia and MDL Indonesia titles.
+
+- **Trivia**:
+  - "The only player to win both MPL Indonesia and MDL Indonesia as the main roster."
+  - "Became the first player to have won MPL Indonesia four-peat (Seasons 10 to 13), together with teammates Kairi, CW, and Kiboy on ONIC."
+
+- **Statistics**:
+  - "Has a 100% win rate with Fanny at MPL Indonesia Season 9 (6 wins, 0 losses)."
+  - "Had the most appearances on Team of the Week in MPL Indonesia Season 11 (4 times)."
+  - "Had the highest average damage per minute in M5 World Championship (3972)."
+
+- **Pro Photo**: A link to the player's professional photo: [Link](https://liquipedia.net/commons/images/d/d3/FNOC_Sanz_S14.png)
+- **Alternate IDs**: Other names or gamer tags the player is known by: SanzJago, Sanztuy, Sanz.
+- **Approx. Total Winnings**: The player's total estimated earnings from esports tournaments, which is approximately $221,615.
 
 # **Hero Information**
 - ```/api/mlbb?hero=HERO_NAME```
@@ -89,8 +222,6 @@ APi simple untuk informasi Mobile Legends, di ambil dari Liquipedia 😃.
   ]
 }
 ```
-Here’s a brief explanation of each data point for this hero:
-
 - **Price**: Indicates the hero's in-game price, either 32000 in-game currency or 599 premium currency.
 - **Lane**: The hero's primary lane or role, which is Jungler in this case.
 - **Hero Type**: The category or class of the hero, here it's an Assassin.
