@@ -142,10 +142,10 @@ router.get("/mlbb", async (req, res) => {
 
     const result = {
       heroInfo,
+      proPlayers,
       relationships,
       skillInfo,
-      lores,
-      proPlayers
+      lores
     };
 
     // Send
