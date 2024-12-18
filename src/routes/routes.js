@@ -5,6 +5,27 @@ const https = require("https");
 const router = express.Router();
 const cheerio = require('cheerio');
 
+// PATCH
+router.get("/mlbb-patch", async (req, res) => {
+  const url = 'https://liquipedia.net/mobilelegends/Portal:Patches';
+  try {
+    const response = await axios.get(url);
+    const $ = cheerio.load(response.data);
+    const patches = [];
+    $('table.wikitable tbody tr').each((index, element) => {
+    const version = $(element).find('td:nth-child(1) a').text().trim(); // Patch Version
+    const releaseDate = $(element).find('td:nth-child(2)').text().trim(); // Release Date
+    const changeLogs = $(element).find('td:nth-child(3)').text().trim(); // Changelogs
+    if (version && releaseDate) {
+      patches.push({ version, releaseDate, changeLogs });
+    }
+    });
+    res.json(patches);
+  } catch (error) {
+    res.status(500).json({ error: "Failed to fetch PATCHES" });
+  }
+});
+
 // MLBB PROPLAYER
 router.get("/mlbb-pro", async (req, res) => {
   const name = req.query.name || "Kairi";
