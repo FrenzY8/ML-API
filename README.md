@@ -39,6 +39,9 @@ APi simple untuk informasi Mobile Legends, di ambil dari Liquipedia 😃.
 - https://ml-api-omega.vercel.app/api/mlbb-patch
 
 # Setup Your APi
+- **Resources**
+  - axios
+  - cheerio
 - **Install**
 - ```npm install```
 - **Run it with:**
