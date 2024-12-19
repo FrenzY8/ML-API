@@ -31,12 +31,27 @@ router.get("/heroes", async (req, res) => {
     const response = await axios.get(url);
     const $ = cheerio.load(response.data);
     const heroes = [];
-    $('ul.gallery li.gallerybox').each((i, element) => {
-      const heroName = $(element).find('div.gallerytext a').attr('title');
-      const iconUrl = $(element).find('div.thumb img').attr('src');
+    $('.wikitable tbody tr').each((i, element) => {
+      const icon = $(element).find('td:nth-child(1) img').attr('data-src');
+      const heroName = $(element).find('td:nth-child(2)').text().trim();
+      const heroOrder = $(element).find('td:nth-child(3)').text().trim();
+      const role = $(element).find('td:nth-child(4) a').map((i, el) => $(el).text()).get().join('/');
+      const specialty = $(element).find('td:nth-child(5) a').map((i, el) => $(el).text()).get().join('/');
+      const laneRecommendation = $(element).find('td:nth-child(6) a').text().trim();
+      const region = $(element).find('td:nth-child(7) a').text().trim();
+      const price = $(element).find('td:nth-child(8) li').map((i, el) => $(el).text().trim()).get().join(', ');
+      const releaseDate = $(element).find('td:nth-child(9)').text().trim();
+      // Push the data into the heroes array
       heroes.push({
-        name: heroName,
-        icon: 'https://liquipedia.net' + iconUrl
+        icon,
+        heroName,
+        heroOrder,
+        role,
+        specialty,
+        laneRecommendation,
+        region,
+        price,
+        releaseDate,
       });
     });
     res.json(heroes);
