@@ -5,6 +5,25 @@ const https = require("https");
 const router = express.Router();
 const cheerio = require('cheerio');
 
+// ICON FETCHEF
+app.get('/proxy-image', async (req, res) => {
+    const imageUrl = req.query.url; // Ambil URL gambar dari query parameter
+    try {
+        // Ambil gambar dari sumber eksternal
+        const response = await axios({
+            url: imageUrl,
+            responseType: 'stream', // Ambil sebagai stream untuk gambar
+        });
+
+        // Set header untuk merespons sebagai gambar
+        res.setHeader('Content-Type', response.headers['content-type']);
+        response.data.pipe(res); // Teruskan data stream gambar ke response
+    } catch (error) {
+        console.error('Error fetching image:', error);
+        res.status(500).send('Error fetching image');
+    }
+});
+
 // HEROES LIST + ICON
 router.get("/heroes", async (req, res) => {
   const url = 'https://liquipedia.net/mobilelegends/Portal:Heroes';
