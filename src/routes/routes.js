@@ -5,6 +5,27 @@ const https = require("https");
 const router = express.Router();
 const cheerio = require('cheerio');
 
+// HEROES LIST + ICON
+router.get("/heroes", async (req, res) => {
+  const url = 'https://liquipedia.net/mobilelegends/Portal:Heroes';
+  try {
+    const response = await axios.get(url);
+    const $ = cheerio.load(response.data);
+    const heroes = [];
+    $('ul.gallery li.gallerybox').each((i, element) => {
+      const heroName = $(element).find('div.gallerytext a').attr('title');
+      const iconUrl = $(element).find('div.thumb img').attr('src');
+      heroes.push({
+        name: heroName,
+        icon: 'https://liquipedia.net' + iconUrl
+      });
+    });
+    res.json(heroes);
+  } catch (error) {
+    res.status(500).json({ error: "Failed to fetch PATCHES" });
+  }
+});
+
 // PATCH
 router.get("/mlbb-patch", async (req, res) => {
   const url = 'https://liquipedia.net/mobilelegends/Portal:Patches';
