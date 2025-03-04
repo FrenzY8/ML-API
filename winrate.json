@@ -1,23 +1,22 @@
-"data": [
-    {
-      "hero": "Eudora",
-      "winRate": 0.0
-    },
-    {
-      "hero": "Tigreal",
-      "winRate": 0.0
-    },
-    {
-      "hero": "Saber",
-      "winRate": 48.08
-    },
-    {
-      "hero": "Lukas",
-      "winRate": 46.58
-    },
-    {
-      "hero": "Balmond",
-      "winRate": 46.56
-    }
-  ]
-}
+[
+  {
+    "hero": "Eudora",
+    "winRate": 56.39
+  },
+  {
+    "hero": "Tigreal",
+    "winRate": 49.08
+  },
+  {
+    "hero": "Saber",
+    "winRate": 48.08
+  },
+  {
+    "hero": "Lukas",
+    "winRate": 46.58
+  },
+  {
+    "hero": "Balmond",
+    "winRate": 46.56
+  }
+]
