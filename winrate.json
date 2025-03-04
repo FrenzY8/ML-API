@@ -224,6 +224,10 @@
     "winRate": 50.16
   },
   {
+    "hero": "Lunox",
+    "winRate": 50.1
+  },
+  {
     "hero": "Claude",
     "winRate": 49.96
   },
@@ -384,6 +388,10 @@
     "winRate": 47.39
   },
   {
+    "hero": "Vale",
+    "winRate": 47.29
+  },
+  {
     "hero": "Grock",
     "winRate": 47.24
   },
@@ -472,6 +480,10 @@
     "winRate": 43.79
   },
   {
+    "hero": "Belerick",
+    "winRate": 43.19
+  },
+  {
     "hero": "Hanzo",
     "winRate": 42.75
   },
@@ -493,18 +505,6 @@
   },
   {
     "hero": "Alice",
-    "winRate": 0
-  },
-  {
-    "hero": "Vale",
-    "winRate": 0
-  },
-  {
-    "hero": "Lunox",
-    "winRate": 0
-  },
-  {
-    "hero": "Belerick",
     "winRate": 0
   },
   {
