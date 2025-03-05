@@ -8,6 +8,10 @@
     "winRate": 57.53
   },
   {
+    "hero": "Wanwan",
+    "winRate": 57.19
+  },
+  {
     "hero": "Odette",
     "winRate": 56.95
   },
@@ -18,6 +22,14 @@
   {
     "hero": "Luo Yi",
     "winRate": 56.1
+  },
+  {
+    "hero": "Yi Sun-shin",
+    "winRate": 55.59
+  },
+  {
+    "hero": "Zhask",
+    "winRate": 54.55
   },
   {
     "hero": "Harith",
@@ -40,12 +52,20 @@
     "winRate": 53.3
   },
   {
+    "hero": "Lolita",
+    "winRate": 53.18
+  },
+  {
     "hero": "Franco",
     "winRate": 53.09
   },
   {
     "hero": "Zhuxin",
     "winRate": 53.06
+  },
+  {
+    "hero": "Guinevere",
+    "winRate": 52.76
   },
   {
     "hero": "Chou",
@@ -70,6 +90,10 @@
   {
     "hero": "Kaja",
     "winRate": 52.13
+  },
+  {
+    "hero": "Sun",
+    "winRate": 52.11
   },
   {
     "hero": "Bruno",
@@ -104,6 +128,14 @@
     "winRate": 51.6
   },
   {
+    "hero": "Phoveus",
+    "winRate": 51.6
+  },
+  {
+    "hero": "Faramis",
+    "winRate": 51.48
+  },
+  {
     "hero": "Natan",
     "winRate": 51.26
   },
@@ -114,6 +146,14 @@
   {
     "hero": "Paquito",
     "winRate": 51.18
+  },
+  {
+    "hero": "Masha",
+    "winRate": 51.03
+  },
+  {
+    "hero": "Khaleed",
+    "winRate": 51.01
   },
   {
     "hero": "Estes",
@@ -128,6 +168,10 @@
     "winRate": 50.89
   },
   {
+    "hero": "Benedetta",
+    "winRate": 50.7
+  },
+  {
     "hero": "Jawhead",
     "winRate": 50.57
   },
@@ -136,8 +180,20 @@
     "winRate": 50.56
   },
   {
+    "hero": "Minotaur",
+    "winRate": 50.5
+  },
+  {
+    "hero": "Baxia",
+    "winRate": 50.41
+  },
+  {
     "hero": "Julian",
     "winRate": 50.41
+  },
+  {
+    "hero": "Arlott",
+    "winRate": 50.38
   },
   {
     "hero": "Thamuz",
@@ -146,6 +202,10 @@
   {
     "hero": "Ling",
     "winRate": 50.28
+  },
+  {
+    "hero": "Uranus",
+    "winRate": 50.26
   },
   {
     "hero": "Karina",
@@ -164,6 +224,10 @@
     "winRate": 50.16
   },
   {
+    "hero": "Lunox",
+    "winRate": 50.1
+  },
+  {
     "hero": "Claude",
     "winRate": 49.96
   },
@@ -178,6 +242,10 @@
   {
     "hero": "Valentina",
     "winRate": 49.8
+  },
+  {
+    "hero": "Granger",
+    "winRate": 49.54
   },
   {
     "hero": "Miya",
@@ -212,12 +280,24 @@
     "winRate": 49.36
   },
   {
+    "hero": "Brody",
+    "winRate": 49.31
+  },
+  {
+    "hero": "Lancelot",
+    "winRate": 49.3
+  },
+  {
     "hero": "Akai",
     "winRate": 49.26
   },
   {
     "hero": "Cici",
     "winRate": 49.24
+  },
+  {
+    "hero": "Diggie",
+    "winRate": 49.18
   },
   {
     "hero": "Aldous",
@@ -252,8 +332,24 @@
     "winRate": 48.73
   },
   {
+    "hero": "Khufra",
+    "winRate": 48.69
+  },
+  {
+    "hero": "Alpha",
+    "winRate": 48.56
+  },
+  {
+    "hero": "Fanny",
+    "winRate": 48.51
+  },
+  {
     "hero": "Bane",
     "winRate": 48.16
+  },
+  {
+    "hero": "Barats",
+    "winRate": 48.09
   },
   {
     "hero": "Saber",
@@ -268,12 +364,28 @@
     "winRate": 47.93
   },
   {
+    "hero": "Hylos",
+    "winRate": 47.82
+  },
+  {
     "hero": "Xavier",
     "winRate": 47.74
   },
   {
+    "hero": "Layla",
+    "winRate": 47.69
+  },
+  {
+    "hero": "Leomord",
+    "winRate": 47.51
+  },
+  {
     "hero": "Kagura",
     "winRate": 47.48
+  },
+  {
+    "hero": "Lapu-Lapu",
+    "winRate": 47.39
   },
   {
     "hero": "Vale",
@@ -286,6 +398,14 @@
   {
     "hero": "X.Borg",
     "winRate": 47.04
+  },
+  {
+    "hero": "Karrie",
+    "winRate": 46.96
+  },
+  {
+    "hero": "Vexana",
+    "winRate": 46.93
   },
   {
     "hero": "Nana",
@@ -308,8 +428,16 @@
     "winRate": 46.48
   },
   {
+    "hero": "Roger",
+    "winRate": 46.46
+  },
+  {
     "hero": "Angela",
     "winRate": 46.38
+  },
+  {
+    "hero": "Valir",
+    "winRate": 46.28
   },
   {
     "hero": "Johnson",
@@ -318,6 +446,18 @@
   {
     "hero": "Alucard",
     "winRate": 45.92
+  },
+  {
+    "hero": "Ruby",
+    "winRate": 45.84
+  },
+  {
+    "hero": "Silvanna",
+    "winRate": 45.14
+  },
+  {
+    "hero": "Martis",
+    "winRate": 45.13
   },
   {
     "hero": "Cecilion",
@@ -340,8 +480,20 @@
     "winRate": 43.79
   },
   {
+    "hero": "Belerick",
+    "winRate": 43.19
+  },
+  {
+    "hero": "Hanzo",
+    "winRate": 42.75
+  },
+  {
     "hero": "Minsitthar",
     "winRate": 41.92
+  },
+  {
+    "hero": "Hanabi",
+    "winRate": 38.54
   },
   {
     "hero": "Zilong",
@@ -353,158 +505,6 @@
   },
   {
     "hero": "Alice",
-    "winRate": 0
-  },
-  {
-    "hero": "Fanny",
-    "winRate": 0
-  },
-  {
-    "hero": "Layla",
-    "winRate": 0
-  },
-  {
-    "hero": "Minotaur",
-    "winRate": 0
-  },
-  {
-    "hero": "Lolita",
-    "winRate": 0
-  },
-  {
-    "hero": "Sun",
-    "winRate": 0
-  },
-  {
-    "hero": "Alpha",
-    "winRate": 0
-  },
-  {
-    "hero": "Ruby",
-    "winRate": 0
-  },
-  {
-    "hero": "Yi Sun-shin",
-    "winRate": 0
-  },
-  {
-    "hero": "Lapu-Lapu",
-    "winRate": 0
-  },
-  {
-    "hero": "Vexana",
-    "winRate": 0
-  },
-  {
-    "hero": "Roger",
-    "winRate": 0
-  },
-  {
-    "hero": "Karrie",
-    "winRate": 0
-  },
-  {
-    "hero": "Lancelot",
-    "winRate": 0
-  },
-  {
-    "hero": "Diggie",
-    "winRate": 0
-  },
-  {
-    "hero": "Hylos",
-    "winRate": 0
-  },
-  {
-    "hero": "Zhask",
-    "winRate": 0
-  },
-  {
-    "hero": "Valir",
-    "winRate": 0
-  },
-  {
-    "hero": "Martis",
-    "winRate": 0
-  },
-  {
-    "hero": "Uranus",
-    "winRate": 0
-  },
-  {
-    "hero": "Hanabi",
-    "winRate": 0
-  },
-  {
-    "hero": "Leomord",
-    "winRate": 0
-  },
-  {
-    "hero": "Lunox",
-    "winRate": 0
-  },
-  {
-    "hero": "Hanzo",
-    "winRate": 0
-  },
-  {
-    "hero": "Belerick",
-    "winRate": 0
-  },
-  {
-    "hero": "Faramis",
-    "winRate": 0
-  },
-  {
-    "hero": "Khufra",
-    "winRate": 0
-  },
-  {
-    "hero": "Granger",
-    "winRate": 0
-  },
-  {
-    "hero": "Guinevere",
-    "winRate": 0
-  },
-  {
-    "hero": "Baxia",
-    "winRate": 0
-  },
-  {
-    "hero": "Masha",
-    "winRate": 0
-  },
-  {
-    "hero": "Wanwan",
-    "winRate": 0
-  },
-  {
-    "hero": "Silvanna",
-    "winRate": 0
-  },
-  {
-    "hero": "Benedetta",
-    "winRate": 0
-  },
-  {
-    "hero": "Khaleed",
-    "winRate": 0
-  },
-  {
-    "hero": "Barats",
-    "winRate": 0
-  },
-  {
-    "hero": "Brody",
-    "winRate": 0
-  },
-  {
-    "hero": "Phoveus",
-    "winRate": 0
-  },
-  {
-    "hero": "Arlott",
     "winRate": 0
   },
   {
