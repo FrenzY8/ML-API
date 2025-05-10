@@ -301,14 +301,14 @@ router.get("/mlbb", async (req, res) => {
     const text = $(el).text().trim();
     if (text) specialties.push(text);
     });
-    const specialtyText = specialties.join(' & ');
+    const specialty = specialties.join(', ');
     
     const heroInfo = {
       name: hero,
       price: $('div.infobox-cell-2:contains("Price")').next().text().trim(),
       lane: Role,
       heroType: Lane,
-      specialty: specialtyText,
+      specialty: specialty,
       region: $('div.infobox-cell-2:contains("Region")').next().text().trim(),
       city: $('div.infobox-cell-2:contains("City")').next().text().trim(),
       quote: quote || "No quote.",
