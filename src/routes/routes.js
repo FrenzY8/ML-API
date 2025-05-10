@@ -1,7 +1,6 @@
 const express = require("express");
 const axios = require("axios");
 const https = require("https");
-// const fetch = require('node-fetch');
 const router = express.Router();
 const cheerio = require('cheerio');
 
@@ -291,6 +290,7 @@ router.get("/mlbb", async (req, res) => {
     };
     
     const heroInfo = {
+      name: hero,
       price: $('div.infobox-cell-2:contains("Price")').next().text().trim(),
       lane: Role,
       heroType: Lane,
@@ -337,7 +337,7 @@ router.get("/mlbb", async (req, res) => {
     res.json(result);
   } catch (error) {
     console.error('Failed to fetch hero, or hero not found for ' + hero, error);
-    res.status(500).json({ error: 'Failed to fetch hero, or hero not found for ' + hero });
+    res.status(500).json({ error: 'Failed to fetch hero, or hero not found for ' + hero + ", " + error });
   }
 });
 
