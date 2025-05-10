@@ -296,21 +296,28 @@ router.get("/mlbb", async (req, res) => {
       skill_3_description: ultimateCooldown
     };
 
+    const specialties = [];
+    $('div.infobox-cell-2:contains("Specialty")').nextAll().each((i, el) => {
+    const text = $(el).text().trim();
+    if (text) specialties.push(text);
+    });
+    const specialtyText = specialties.join(' & ');
+    
     const heroInfo = {
       name: hero,
       price: $('div.infobox-cell-2:contains("Price")').next().text().trim(),
       lane: Role,
       heroType: Lane,
-      specialty: $('div.infobox-cell-2:contains("Specialty")').next().text().trim(),
+      specialty: specialtyText,
       region: $('div.infobox-cell-2:contains("Region")').next().text().trim(),
       city: $('div.infobox-cell-2:contains("City")').next().text().trim(),
-      quote: quote,
+      quote: quote || "No quote.",
       resourceBar: $('div.infobox-cell-2:contains("Resource Bar")').next().text().trim(),
       releaseDate: $('div.infobox-cell-2:contains("Release Date")').next().text().trim(),
       voiceActor: $('div.infobox-cell-2:contains("Voice Actor(s)")').next().text().trim(),
       winRate: $('div.infobox-cell-2:contains("Win Rate")').next().text().trim(),
       baseStats: {
-        health: $('div.infobox-cell-2:contains("Health")').next().text().trim(),
+        health: $('div.infobox-cell-2:contains("Health")').next().text().trim() || $('div.infobox-cell-2:contains("HP")').next().text().trim(),
         healthRegen: $('div.infobox-cell-2:contains("Health Regen")').next().text().trim() || $('div.infobox-cell-2:contains("HP Regen")').next().text().trim(),
         mana: $('div.infobox-cell-2:contains("Mana")').next().text().trim(),
         manaRegen: $('div.infobox-cell-2:contains("Mana Regen")').next().text().trim(),
