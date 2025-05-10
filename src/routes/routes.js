@@ -333,11 +333,17 @@ router.get("/mlbb", async (req, res) => {
 
     // Fetch pro players
     const proPlayers = [];
-    $('tr td div.wiki-backgroundcolor-light a').each((index, element) => {
-      const playerName = $(element).attr('title');
-      if (playerName) {
-        proPlayers.push(playerName);
-      }
+    $('tr td').each((index, element) => {
+    const nameEl = $(element).find('div.wiki-backgroundcolor-light a');
+    const imgEl = $(element).find('img');
+    const playerName = nameEl.attr('title');
+    const imageUrl = imgEl.attr('src');
+    if (playerName && imageUrl) {
+    proPlayers.push({
+      name: playerName,
+      image: 'https://mobilelegends.fandom.com' + imageUrl
+    });
+    }
     });
 
     const result = {
