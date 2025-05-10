@@ -311,7 +311,7 @@ router.get("/mlbb", async (req, res) => {
       winRate: $('div.infobox-cell-2:contains("Win Rate")').next().text().trim(),
       baseStats: {
         health: $('div.infobox-cell-2:contains("Health")').next().text().trim(),
-        healthRegen: $('div.infobox-cell-2:contains("Health Regen")').next().text().trim() || healthRegen: $('div.infobox-cell-2:contains("HP Regen")').next().text().trim(),
+        healthRegen: $('div.infobox-cell-2:contains("Health Regen")').next().text().trim() || $('div.infobox-cell-2:contains("HP Regen")').next().text().trim(),
         mana: $('div.infobox-cell-2:contains("Mana")').next().text().trim(),
         manaRegen: $('div.infobox-cell-2:contains("Mana Regen")').next().text().trim(),
         physicalAttack: $('div.infobox-cell-2:contains("Physical Attack")').next().text().trim(),
