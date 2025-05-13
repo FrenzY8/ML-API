@@ -34,9 +34,10 @@ router.get("/hero-list", async (req, res) => {
         releaseDate,
       });
     });
+    heroes.shift();
     res.json(heroes);
   } catch (error) {
-    res.status(500).json({ error: "Failed to fetch PATCHES" });
+    res.status(500).json({ error: "Failed to fetch Hero-List" });
   }
 });
 
