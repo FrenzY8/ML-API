@@ -254,7 +254,7 @@ router.get("/mlbb", async (req, res) => {
       const cerita = lore('div.mw-parser-output p').first().text().trim();
       lores = {
         title: judul,
-        lore: cerita || 'Lore tidak tersedia.'
+        lore: cerita || ''
       };
     } catch (loreError) {
       console.error('Failed to fetch lore for hero ' + hero, loreError);
@@ -302,8 +302,8 @@ router.get("/mlbb", async (req, res) => {
     const heroInfo = {
       name: hero,
       price: $('div.infobox-cell-2:contains("Price")').next().text().trim(),
-      lane: Role,
-      heroType: Lane,
+      lane: $('div.infobox-cell-2:contains("Lane")').next().text().trim(),
+      role: $('div.infobox-cell-2:contains("Role")').next().text().trim(),
       specialty: specialty,
       region: $('div.infobox-cell-2:contains("Region")').next().text().trim(),
       city: $('div.infobox-cell-2:contains("City")').next().text().trim(),
