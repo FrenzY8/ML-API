@@ -369,11 +369,7 @@ router.get("/mlbb", async (req, res) => {
         if (skinName && imageUrl) {
           skins.push({
             name: skinName,
-            image: imageUrl,
-            price: {
-              diamond,
-              battlepoint
-            }
+            image: imageUrl
           });
         }
       });
@@ -391,132 +387,6 @@ router.get("/mlbb", async (req, res) => {
       skins
     };
 
-    res.json(result);
-  } catch (error) {
-    console.error('Failed to fetch hero, or hero not found for ' + hero, error);
-    res.status(500).json({ error: 'Failed to fetch hero, or hero not found for ' + hero + ", " + error });
-  }
-});
-
-router.get("/mlbb2", async (req, res) => {
-  const hero = req.query.hero || "Miya";
-  const url = 'https://liquipedia.net/mobilelegends/' + hero;
-  const urlLore = 'https://liquipedia.net/mobilelegends/' + hero + '/Lore';
-
-  try {
-    // Fetch hero data
-    const response = await axios.get(url);
-    const $ = cheerio.load(response.data);
-
-    // Fetch lore data (handle failure separately)
-    let lores = { title: '', lore: 'Lore tidak ditemukan.' };  // Default lore if fetching fails
-    try {
-      const responseLore = await axios.get(urlLore);
-      const lore = cheerio.load(responseLore.data);
-      const judul = lore('h1.firstHeading').text().trim();
-      const cerita = lore('div.mw-parser-output p').first().text().trim();
-      lores = {
-        title: judul,
-        lore: cerita || 'Lore tidak tersedia.'
-      };
-    } catch (loreError) {
-      console.error('Failed to fetch lore for hero ' + hero, loreError);
-      // Lore fetching failed, using default message above
-    }
-
-    // Fetch hero relationships
-    const relationships = [];
-    $('span#Relationships').parent().next('ul').find('li').each((index, element) => {
-      const name = $(element).find('a').attr('title');
-      const relation = $(element).text().split('—')[1]?.trim(); // Ambil bagian setelah "—"
-      const imgAlt = $(element).find('img').attr('alt');
-      if (name && relation && imgAlt) {
-        relationships.push({
-          name: name,
-          relation: relation,
-        });
-      }
-    });
-
-    // Fetch other hero info
-    const quote = $('div.infobox-center i').text().trim();
-    const passiveDescription = $('div.spellcard-wrapper').first().find('.spellcard-description').first().text().trim();
-    const skill1Description = $('div.spellcard-wrapper').eq(1).find('.spellcard-description').first().text().trim();
-    const skill1Cooldown = $('div.spellcard-wrapper').eq(1).find('.spellcard-description').last().text().trim();
-    const skill2Description = $('div.spellcard-wrapper').eq(2).find('.spellcard-description').first().text().trim();
-    const skill2Cooldown = $('div.spellcard-wrapper').eq(2).find('.spellcard-description').last().text().trim();
-    const ultimateDescription = $('div.spellcard-wrapper').eq(3).find('.spellcard-description').first().text().trim();
-    const ultimateCooldown = $('div.spellcard-wrapper').eq(3).find('.spellcard-description').last().text().trim();
-
-    const Role = $('div.infobox-cell-2.infobox-center img[alt]').first().attr('alt');
-    const Lane = $('div.infobox-cell-2.infobox-center img[alt]').last().attr('alt');
-
-    const skillInfo = {
-      passive: passiveDescription,
-      skill_1_description: skill1Cooldown,
-      skill_2_description: skill2Cooldown,
-      skill_3_description: ultimateCooldown
-    };
-
-    const specialties = [];
-    $('div.infobox-cell-2:contains("Specialty")').nextAll().each((i, el) => {
-    const text = $(el).text().trim();
-    if (text) specialties.push(text);
-    });
-    const specialty = specialties.join(', ');
-    
-    const heroInfo = {
-      name: hero,
-      price: $('div.infobox-cell-2:contains("Price")').next().text().trim(),
-      lane: Role,
-      heroType: Lane,
-      specialty: specialty,
-      region: $('div.infobox-cell-2:contains("Region")').next().text().trim(),
-      city: $('div.infobox-cell-2:contains("City")').next().text().trim(),
-      quote: quote || "No quote.",
-      resourceBar: $('div.infobox-cell-2:contains("Resource Bar")').next().text().trim(),
-      releaseDate: $('div.infobox-cell-2:contains("Release Date")').next().text().trim(),
-      voiceActor: $('div.infobox-cell-2:contains("Voice Actor(s)")').next().text().trim(),
-      winRate: $('div.infobox-cell-2:contains("Win Rate")').next().text().trim(),
-      baseStats: {
-        health: $('div.infobox-cell-2:contains("Health")').next().text().trim() || $('div.infobox-cell-2:contains("HP")').next().text().trim(),
-        healthRegen: $('div.infobox-cell-2:contains("Health Regen")').next().text().trim() || $('div.infobox-cell-2:contains("HP Regen")').next().text().trim(),
-        mana: $('div.infobox-cell-2:contains("Mana")').next().text().trim(),
-        manaRegen: $('div.infobox-cell-2:contains("Mana Regen")').next().text().trim(),
-        physicalAttack: $('div.infobox-cell-2:contains("Physical Attack")').next().text().trim(),
-        physicalDefense: $('div.infobox-cell-2:contains("Physical Defense")').next().text().trim(),
-        magicPower: $('div.infobox-cell-2:contains("Magic Power")').next().text().trim(),
-        magicDefense: $('div.infobox-cell-2:contains("Magic Defense")').next().text().trim(),
-        attackSpeed: $('div.infobox-cell-2:contains("Attack Speed")').next().text().trim(),
-        attackSpeedRatio: $('div.infobox-cell-2:contains("Attack Speed Ratio")').next().text().trim(),
-        movementSpeed: $('div.infobox-cell-2:contains("Movement Speed")').next().text().trim(),
-      }
-    };
-
-    // Fetch pro players
-    const proPlayers = [];
-    $('tr td').each((index, element) => {
-    const nameEl = $(element).find('div.wiki-backgroundcolor-light a');
-    const imgEl = $(element).find('img');
-    const playerName = nameEl.attr('title');
-    const imageUrl = imgEl.attr('src');
-    if (playerName && imageUrl) {
-    proPlayers.push({
-      name: playerName,
-      image: 'https://mobilelegends.fandom.com' + imageUrl
-    });
-    }
-    });
-
-    const result = {
-      heroInfo,
-      proPlayers,
-      relationships,
-      skillInfo,
-      lores
-    };
-
-    // Send result
     res.json(result);
   } catch (error) {
     console.error('Failed to fetch hero, or hero not found for ' + hero, error);
