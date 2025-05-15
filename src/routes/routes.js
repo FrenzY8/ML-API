@@ -34,6 +34,7 @@ router.get("/hero-list", async (req, res) => {
         releaseDate,
       });
     });
+    heroes.pop();
     heroes.shift();
     res.json(heroes);
   } catch (error) {
