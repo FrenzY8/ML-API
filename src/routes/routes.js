@@ -237,6 +237,7 @@ router.get("/mlbb-items", async (req, res) => {
   }
 });
 
+// ML HERO
 router.get("/mlbb", async (req, res) => {
   const hero = req.query.hero || "Miya";
   const url = 'https://liquipedia.net/mobilelegends/' + hero;
