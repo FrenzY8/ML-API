@@ -1,0 +1,56 @@
+{
+  "heroInfo": {
+    "name": "Lukas",
+    "price": "32000 599",
+    "lane": "Exp Lane",
+    "role": "Fighter",
+    "specialty": "RegenDamage",
+    "region": "Moniyan",
+    "city": "",
+    "quote": "No quote.",
+    "resourceBar": "",
+    "releaseDate": "2024-12-21",
+    "voiceActor": "",
+    "winRate": "341W : 365L (48.3%)",
+    "baseStats": {
+      "health": "25508",
+      "healthRegen": "8",
+      "mana": "0",
+      "manaRegen": "0",
+      "physicalAttack": "119",
+      "physicalDefense": "21",
+      "magicPower": "0",
+      "magicDefense": "15",
+      "attackSpeed": "1100%",
+      "attackSpeedRatio": "100%",
+      "movementSpeed": "260"
+    }
+  },
+  "proPlayers": [
+    {
+      "name": "Sutsujin",
+      "image": "https://liquipedia.net/commons/images/thumb/9/93/RRQ_Sutsujin_S15.png/200px-RRQ_Sutsujin_S15.png"
+    },
+    {
+      "name": "Ereen",
+      "image": "https://liquipedia.net/commons/images/thumb/a/a4/PlayerImagePlaceholder.png/252px-PlayerImagePlaceholder.png"
+    }
+  ],
+  "relationships": [],
+  "skillInfo": {
+    "passive": "Lukas gains 1 Resolve per second and an additional 2 Resolve when dealing damage to heroes.Lukas consumes 10 Resolve per second while in [Sacred Beast] form.",
+    "skill_1_description": "Passive: Lukas can enhance Flash Combo with his Basic Attacks up to 2 times, lasting 4s.Lukas consumes all Vigor to unleash Pulverize, dealing 270 (+120% Total Physical Attack) Physical Damage, plus additional attacks depending on the Vigor consumed (recovers HP equal to 8% of Max HP when hitting a hero)1 Stack: Lukas briefly stuns the target and spins his tonfa hammers to deal 100 (+50% Total Physical Attack) Physical Damage 3 times, pulling the enemy toward him.2 Stacks: Lukas briefly stuns the target and follows up with 2 attacks that deal 50 (+20% Total Physical Attack) Physical Damage per hit. He will then spin his tonfa hammers to deal 100 (+50% Total Physical Attack) Physical Damage 3 times (cannot be interrupted).",
+    "skill_2_description": "Passive: Lukas can enhance Flash Combo with his Basic Attacks up to 2 times, lasting 4s.Lukas consumes all Vigor to unleash a tail swing, dealing 270 (+120% Total Physical Attack) Physical Damage, plus additional attacks depending on the Vigor consumed, he also recovers 8% of his Max HP.1 Stack: Lukas briefly stuns the target and pounces to deal 100 (+50% Total Physical Attack) Physical Damage 3 times, knocking the enemy back.2 Stacks: Lukas briefly stuns the target and leaps to deal 50 (+20% Total Physical Attack) Physical Damage 2 times. then summons sacred lightning, dealing 100 (+50% Total Physical Attack) Physical Damage 3 times (cannot be interrupted).",
+    "skill_3_description": "Lukas dashes in the target direction and turns his next Basic Attack within 4s into Flash StrikeFlash Strike: Lukas blinks behind the enemy, dealing 60 (+125% Total Physical Attack) Physical Damage. He then increases his Attack Range, gains 20% Movement Speed and 20% Attack Speed, and summons lightning storms with Basic Attacks to deal 40 (+25% Total Physical Attack) extra Physical Damage, lasting for 4s."
+  },
+  "lores": {
+    "title": "",
+    "lore": ""
+  },
+  "skins": [
+    {
+      "name": "Beast of Light\nDefault Skin",
+      "image": "https://liquipedia.net/commons/images/thumb/d/dd/Lukas_Beast_of_Light_Skin.jpg/475px-Lukas_Beast_of_Light_Skin.jpg"
+    }
+  ]
+}
